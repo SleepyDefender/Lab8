@@ -12,9 +12,8 @@ public class SpellChecker extends TextSimilarityChecker {
 
 
     @Override
-    public double getSimilarity(String text1, String text2) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSimilarity'");
+    public double getSimilarity(String text1, String text2) { 
+        return metric.measure(text1, text2);    
     }
     
 }
